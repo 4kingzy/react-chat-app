@@ -1,0 +1,59 @@
+.paperPlane {
+  padding: 10px;
+  align-items: center;
+}
+
+.align-left {
+  justify-content: flex-start;
+}
+
+.align-left .message-inner {
+  background-color: rgba(61, 180, 182, 0.8);
+  border-radius: 15px 15px 15px 0px;
+}
+
+.align-right {
+  justify-content: flex-end;
+}
+
+.align-right .message-inner {
+  background-color: rgba(238, 156, 167, 0.8);
+  border-radius: 15px 15px 0 15px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Messages {
+  overflow: auto !important;
+}
+
+.weChat {
+  height: 50px;
+}
+
+body {
+  background-color: #c9c9c9;
+}
+
+small {
+  align-items: end;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.login-inner {
+  max-width: 50vw;
+  display: flex;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
