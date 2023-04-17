@@ -71,8 +71,8 @@ export function randomName() {
   return adjective;
 }
 
-export function randomColor() {
+/* export function randomColor() {
   let color = Math.floor(Math.random() * 0xffffff).toString(16);
 
   return "#" + (color === "ffffff" ? randomColor() : color);
-}
+} */

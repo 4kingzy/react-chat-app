@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "./theme";
 
 export const Button = styled.button`
   margin-right: 50px;
@@ -57,7 +56,7 @@ export const Footer = styled.footer`
   /* bottom: 0px; */
   width: 100%;
   background-color: #c9c9c9;
-  color: ${colors.textPrimary};
+  color: black;
 
   display: flex;
   justify-content: space-evenly;
