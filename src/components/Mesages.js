@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {} from "../utils/util";
 import {
   Button,
   Header,
   Main,
   Footer,
-  MsgContainer,
   MsgInput,
-  MsgInner,
   Home,
   HeaderInner,
 } from "../utils/style";
@@ -15,6 +13,7 @@ import Text from "./Text";
 import { ReactComponent as PaperPlane } from "../logos/paper-plane.svg";
 import "./style.css";
 import { ReactComponent as WeChat } from "../logos/chat-logo.svg";
+import { ReactComponent as ClearButton } from "../logos/delete.svg";
 
 const Messages = () => {
   const [sdUser, setSdUser] = useState("");
@@ -59,7 +58,7 @@ const Messages = () => {
       }
     });
 
-    // Handle error and discconnets
+    // Handle error and disconnects
     scaledrone.on("error", (error) => console.error(error));
     scaledrone.on("disconnect", () => {
       console.log("Disconnected");
@@ -107,7 +106,7 @@ const Messages = () => {
             <HeaderInner>
               <WeChat className="weChat" />
               <Button className="deleteButton" onClick={handleDelete}>
-                BRISANJE
+                <ClearButton style={{ height: "20px", width: "20px" }} />
               </Button>
             </HeaderInner>
           </Header>

@@ -34,6 +34,11 @@
   height: 50px;
 }
 
+.deleteButton {
+  height: 50px;
+  width: 50px;
+}
+
 body {
   background-color: #c9c9c9;
 }

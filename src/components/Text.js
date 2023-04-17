@@ -9,7 +9,7 @@ const Text = ({ content, currentMember }) => {
   let time = new Date(content.timestamp * 1000);
   /* console.log(time); */
 
-  var options = { hour: "numeric", minute: "numeric", hour12: false };
+  let options = { hour: "numeric", minute: "numeric", hour12: false };
 
   time = time.toLocaleString("hr", options);
 
